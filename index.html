@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الألعاب الإلكترونية للأطفال</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            padding-top: 70px;
+            font-family: Tahoma;
+            background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .overlay {
+            background: rgba(255,255,255,0.92);
+            padding: 30px 0;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .benefit {
+            color: #2e8b57;
+        }
+
+        .danger {
+            color: #b22222;
+        }
+
+        /* Jumbotron Background */
+        .jumbotron {
+            background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+        }
+
+        .jumbotron::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .jumbotron .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .panel-heading {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Gaming Kids</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">الرئيسية</a></li>
+                <li><a href="#benefits">الفوائد</a></li>
+                <li><a href="#dangers">الأخطار</a></li>
+                <li><a href="#safe">الاستخدام الآمن</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="overlay">
+
+<!-- ================= JUMBOTRON ================= -->
+<div class="container">
+    <div class="jumbotron text-center">
+        <div class="content">
+            <h1>الألعاب الإلكترونية للأطفال</h1>
+            <p>استخدام ذكي = متعة + تعلم + أمان</p>
+            <button class="btn btn-success btn-lg">ابدأ التوعية</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= ALERT ================= -->
+<div class="container">
+    <div class="alert alert-danger text-center">
+        ⚠️ الإدمان على الألعاب الإلكترونية خطر حقيقي على الأطفال
+    </div>
+</div>
+
+<!-- ================= BENEFITS ================= -->
+<div class="container section" id="benefits">
+    <h2 class="text-center benefit">فوائد الألعاب الإلكترونية</h2>
+
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+                 class="img-circle img-responsive center-block">
+            <h4>تنمية الذكاء</h4>
+            <p>تحسين التفكير وسرعة اتخاذ القرار</p>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                 class="img-rounded img-responsive center-block">
+            <h4>تعلم مهارات</h4>
+            <p>لغات – تخطيط – حل مشكلات</p>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1604011237320-8e0506614fdf"
+                 class="img-thumbnail img-responsive center-block">
+            <h4>الترفيه</h4>
+            <p>متعة وتسلية في وقت الفراغ</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= DANGERS ================= -->
+<div class="container section" id="dangers">
+    <h2 class="text-center danger">مخاطر الألعاب الإلكترونية</h2>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">أضرار صحية</div>
+        <div class="panel-body">
+            ضعف النظر – آلام الظهر – قلة الحركة
+        </div>
+    </div>
+
+    <div class="panel panel-warning">
+        <div class="panel-heading">العزلة الاجتماعية</div>
+        <div class="panel-body">
+            الابتعاد عن الأسرة والأصدقاء
+        </div>
+    </div>
+</div>
+
+<!-- ================= TABLE ================= -->
+<div class="container section">
+    <h3 class="text-center">مقارنة بين الاستخدام</h3>
+
+    <table class="table table-bordered table-hover">
+        <tr class="success">
+            <th>استخدام آمن</th>
+            <th>استخدام خطر</th>
+        </tr>
+        <tr>
+            <td>ساعتين يوميًا</td>
+            <td>ساعات طويلة</td>
+        </tr>
+        <tr>
+            <td>ألعاب تعليمية</td>
+            <td>ألعاب عنف</td>
+        </tr>
+    </table>
+</div>
+
+<!-- ================= COLLAPSE ================= -->
+<div class="container section" id="safe">
+    <h3>
+        <a data-toggle="collapse" href="#tips">نصائح للاستخدام الآمن</a>
+    </h3>
+
+    <div id="tips" class="collapse">
+        <ul class="list-group">
+            <li class="list-group-item">تحديد وقت اللعب</li>
+            <li class="list-group-item">متابعة الأهل</li>
+            <li class="list-group-item">اختيار ألعاب مناسبة للعمر</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div class="container text-center section">
+    <div class="well">
+        © 2026 – موقع توعوي عن الألعاب الإلكترونية
+    </div>
+</div>
+
+</div>
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
